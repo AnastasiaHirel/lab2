@@ -35,11 +35,11 @@ public class MainFrame extends JFrame {
     private Toolkit kit;
 
     public Double calculate1(Double x, Double y, Double z) {
-        return (Math.sin(Math.PI * y * y) + Math.log(y * y)) / (Math.sin(Math.PI * z * z) + Math.sin(x) + Math.log(z * z) + x * x + Math.pow(Math.E, Math.cos(z * x)));
+        return Math.pow((Math.pow(Math.sin(y) + y*y + Math.pow(Math.E, Math.cos(y)), 2)) + Math.pow((Math.log(z * z) + Math.sin(Math.PI*x*x)), 3), 1/2);
     }
 
     public Double calculate2(Double x, Double y, Double z) {
-        return Math.pow(y, 1/2)*(3*Math.pow(z, x))/Math.pow((1 + Math.pow(y, 3)), 1/2);
+        return (Math.pow(y, 1/2)*(3*Math.pow(z, x)))/(Math.pow((1 + Math.pow(y, 3)), 1/2));
     }
 
     private void addRadioButtonF(String buttonName, final int formulaId) {
